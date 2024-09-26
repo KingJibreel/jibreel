@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            height: 93px;
+            width: 100%;
+            background-color: aqua;
+            position: relative;
+            z-index: 10;
+
+        }
+
+        .container {
+            width: 335px;
+            height: 101px;
+            background-color: green;
+            margin: auto;
+            position: relative;
+            padding: 209px 541px;
+            overflow: auto;
+
+
+        }
+
+        .box1 {
+            width: 222px;
+            height: 244px;
+            background-color: pink;
+            position: absolute;
+            right: 900px;
+            top: 144px;
+            z-index: 15;
+
+        }
+
+        .box2 {
+            width: 222px;
+            height: 244px;
+            background-color: blue;
+            position: absolute;
+            right: 524px;
+            top: 144px;
+            z-index: 10;
+
+
+        }
+
+        footer {
+            background-color: bisque;
+        }
+
+        main {
+            display: flex;
+            background-color: black;
+            position: relative;
+        }
+
+        .newbox {
+            background-color: bisque;
+            height: 93px;
+            width: 100%;
+        }
+
+        .one {
+            height: 433px;
+            width: 744px;
+            border: 12px solid white;
+            margin: auto;
+            padding: 34px;
+            border-radius: 44px;
+            background-color: black;
+        }
+
+        .twoo {
+            background-color: gray;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            position: relative;
+            top: 41%;
+        }
+
+        .circle {
+            color: orange;
+            border: 7px solid orange;
+            height: 33px;
+            width: 32px;
+            border-radius: 100%;
+            background-color: orange;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+    </main>
+    <main class="twoo">
+        <div class="one">
+            <h1>Sigma Web Development course is Best</h1>
+        </div>
+    </main>
+
+    <footer>
+        <div class="newbox">
+            <h1></h1>
+        </div>
+        <div class="circle"></div>
+    </footer>
+</body>
+
+</html>
